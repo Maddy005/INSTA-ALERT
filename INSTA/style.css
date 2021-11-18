@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'roboto';
+    z-index: 100;
+    
+    
+}
+body{
+     
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.container{
+    background-color: rgb(228, 226, 226);
+    padding: 20px;
+    width: 20%;
+    height: 60%;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 1px 7px rgba(0, 0, 0, 0.267);
+    animation-name: anime1;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes anime1{
+    0%{
+        border-color: rgb(230, 31, 107);
+        box-shadow: 10px 10px 20px red;
+        transform:translateX(60px);
+    }
+    35%{
+        border-color: rgb(168, 19, 101); 
+        box-shadow: 20px 20px 20px rgb(255, 0, 170); 
+        transform: translateX(90PX);
+    }
+    50%{
+        border-color: rgb(88, 1, 37);
+        box-shadow: 10px 10px 20px rgb(59, 0, 35);
+        transform: translateX(90px);
+    }
+    75%{
+        border-color: rgb(255, 60, 0); 
+        box-shadow: 20px 20px 20px rgb(255, 30, 0); 
+        transform: translateX(40PX);
+    }
+    100%{
+        border-color: rgb(109, 17, 5);  
+        box-shadow: 10px 10px 20px rgb(180, 2, 2);
+        transform: translateX(0px)
+    }
+}
+.circle{
+    position: relative;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 7px solid  rgb(92, 1, 69);
+    animation-name: anime;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes anime{
+    0%{
+        border-color: rgb(230, 31, 107);
+        box-shadow: 10px 0px 20px red;
+    }
+    35%{
+        border-color: rgb(168, 19, 101); 
+        box-shadow: 20px 20px 20px rgb(255, 0, 170); 
+    }
+    50%{
+        border-color: rgb(88, 1, 37);
+        box-shadow: 10px 10px 20px rgb(59, 0, 35);
+    }
+    75%{
+        border-color: rgb(255, 60, 0); 
+        box-shadow: 20px 20px 20px rgb(255, 30, 0); 
+    }
+    100%{
+        border-color: rgb(109, 17, 5);  
+        box-shadow: 10px 10px 20px rgb(180, 2, 2);
+    }
+}
+
+
+#line1{
+position: absolute;
+width: 40px;
+height: 8px;
+top: 34px;
+left: 6px;
+border-radius: 20px;
+transform: rotate(90deg);
+background-color:rgb(65, 105, 225);
+z-index: 100;
+}
+#line2{
+    position: absolute;
+    width: 40px;
+    height: 8px;
+    top: 34px;
+    left: 30px;
+    border-radius: 20px;
+    transform: rotate(90deg);
+    background-color: rgb(65, 105, 225);
+    z-index: 100;
+    } 
+    #li{
+        position: absolute;
+        width: 40px;
+        height: 8px;
+        top: 40px;
+        left: 18px;
+        border-radius: 20px;
+        transform: rotate(0deg);
+        background-color: blueviolet;
+        z-index: 100;
+        display: none;
+        transition: 1s ease-out;
+
+    } 
+    #ls{
+        position: absolute;
+        width: 40px;
+        height: 8px;
+        top: 24px;
+        left: 18px;
+        border-radius: 20px;
+        transform: rotate(-0deg);
+        background-color: blueviolet;
+        z-index: 100;
+        display: none;
+        transition: 1s ease-out;
+
+    }
+h2 {
+    font-size: 19px;
+    position: relative;
+    left: 1px;
+    top: 10px;
+    font-weight: 600;
+    color: rgb(31, 28, 28);
+    letter-spacing: 1px;
+    text-align: center;
+   
+    
+}
+ .time{
+    display:block;
+   
+}
+  
+
+
+p{
+    position: relative;
+    top: 20px;
+    line-height: 24px;
+   color: rgba(32, 36, 35, 0.842);
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+.line{
+    margin: auto;
+    position: relative;
+    top: 78px;
+   
+    padding: 3px;
+}
+hr{
+    padding: 8px;
+}
+#ok{
+    text-align: center;
+    position: relative;
+    left: -23px;
+    border: none;
+    top: 1px;
+    border: 1px solid rgba(128, 128, 128, 0.575);
+    border-left: none;
+    border-right: none;
+    width: 120%;
+    height: 11%;
+    color: blueviolet;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: transparent;
+    
+
+}
+#last{
+    cursor: pointer;
+    position: relative;
+    top: 30%;
+    left:30%;
+    border: none;
+    letter-spacing: 1px;
+    background: transparent;
+    }
